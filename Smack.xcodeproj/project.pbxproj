@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F34E62708C8523E3B148AB2 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3533BA0C4C1F17B8A7E6890A /* Pods_Smack.framework */; };
+		5B19A41020093B4300AD3E04 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19A40F20093B4300AD3E04 /* AuthService.swift */; };
 		5B35ED1820077DEC008D689C /* Constatnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35ED1720077DEC008D689C /* Constatnts.swift */; };
 		5B9DA53720078F6700A54753 /* LoginVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9DA53620078F6700A54753 /* LoginVCViewController.swift */; };
 		5BF3A91C1FF8F5C90092FAF6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3A91B1FF8F5C90092FAF6 /* GradientView.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		3533BA0C4C1F17B8A7E6890A /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B19A40F20093B4300AD3E04 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5B35ED1720077DEC008D689C /* Constatnts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constatnts.swift; sourceTree = "<group>"; };
 		5B9DA53620078F6700A54753 /* LoginVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCViewController.swift; sourceTree = "<group>"; };
 		5BF3A91B1FF8F5C90092FAF6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B19A40E20093B0F00AD3E04 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5B19A40F20093B4300AD3E04 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5B35ED1620077DBF008D689C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		F932BF2B1F19A88100EBDCFC /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				5B19A40E20093B0F00AD3E04 /* Services */,
 				5B35ED1620077DBF008D689C /* Utilities */,
 				5BF3A91A1FF8F5B20092FAF6 /* View */,
 				F932BF451F19AB3000EBDCFC /* Model */,
@@ -289,6 +300,7 @@
 				5BF9D7C52008114B00C1862D /* SignUpVC.swift in Sources */,
 				F932BF491F19AB5200EBDCFC /* ChannelVC.swift in Sources */,
 				F932BF471F19AB4200EBDCFC /* ChatVC.swift in Sources */,
+				5B19A41020093B4300AD3E04 /* AuthService.swift in Sources */,
 				5B35ED1820077DEC008D689C /* Constatnts.swift in Sources */,
 				5BF3A91C1FF8F5C90092FAF6 /* GradientView.swift in Sources */,
 				F932BF2D1F19A88100EBDCFC /* AppDelegate.swift in Sources */,
