@@ -51,10 +51,13 @@ class SignUpVC: UIViewController {
         
         AuthService.instance.registerUser(email: emailid, password: pass) { (success) in
             if success {
-                print("registered user!")
+                AuthService.instance.loginUser(email: emailid, password: pass, completion: { (success) in
+                    if success {
+                        print("logged in user!", AuthService.instance.authToken)
+                    }
+                })
             }
         }
-        
         
     }
     
