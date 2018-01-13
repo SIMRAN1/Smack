@@ -9,7 +9,12 @@
 import UIKit
 
 class SignUpVC: UIViewController {
+    
 
+    @IBOutlet weak var username: UITextField!
+    
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,4 +41,19 @@ class SignUpVC: UIViewController {
     }
     */
 
+    @IBOutlet weak var createaccountpressed: UIButton!
+    
+    @IBAction func crezteAccount(_ sender: UIButton) {
+        guard let emailid = email.text , email.text != "" else { return }
+        guard let pass = password.text , password.text != "" else { return }
+        
+        AuthService.instance.registerUser(email: emailid, password: pass) { (success) in
+            if success {
+                print("registered user!")
+            }
+        }
+        
+        
+    }
+    
 }
