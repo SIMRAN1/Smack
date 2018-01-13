@@ -15,6 +15,8 @@ class SignUpVC: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var smackProfileIcon: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,4 +58,9 @@ class SignUpVC: UIViewController {
         
     }
     
+    @IBAction func chooseAvatar(_ sender: UIButton) {
+    }
+    
+    @IBAction func GenerateBackgroundColor(_ sender: UIButton) {
+    }
 }

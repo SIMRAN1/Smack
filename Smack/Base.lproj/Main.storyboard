@@ -229,7 +229,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqP-WL-Ubd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqP-WL-Ubd" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="298" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -240,6 +240,11 @@
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -340,7 +345,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYT-SU-Z1v">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYT-SU-Z1v" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="577" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -351,6 +356,11 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="crezteAccount:" destination="xM6-pm-q1x" eventType="touchUpInside" id="mlb-aL-Asf"/>
                                 </connections>
@@ -373,6 +383,7 @@
                                 </state>
                                 <connections>
                                     <action selector="SignUpBtnPressed:" destination="IDP-H2-3Hx" eventType="touchUpInside" id="rdv-bs-oCF"/>
+                                    <action selector="chooseAvatar:" destination="xM6-pm-q1x" eventType="touchUpInside" id="SJQ-Wa-t6a"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smackProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="PwX-mQ-WpJ">
@@ -393,6 +404,7 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="GenerateBackgroundColor:" destination="xM6-pm-q1x" eventType="touchUpInside" id="uVh-on-YDM"/>
                                     <action selector="SignUpBtnPressed:" destination="IDP-H2-3Hx" eventType="touchUpInside" id="MtW-VN-JHL"/>
                                 </connections>
                             </button>
@@ -420,6 +432,7 @@
                         <outlet property="createaccountpressed" destination="jYT-SU-Z1v" id="fTF-t0-qzY"/>
                         <outlet property="email" destination="jdZ-W2-FdB" id="Tbu-oF-TeL"/>
                         <outlet property="password" destination="6a4-Bw-3tG" id="wuv-Jp-f4k"/>
+                        <outlet property="smackProfileIcon" destination="PwX-mQ-WpJ" id="pP4-Cg-Aag"/>
                         <outlet property="username" destination="wLS-Ll-hBh" id="fbh-tE-S6m"/>
                         <segue destination="qiO-I3-Gvi" kind="unwind" identifier="UnwindSegue" unwindAction="prepareForUnwindWithSegue:" id="U1q-db-smF"/>
                     </connections>
