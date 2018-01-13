@@ -13,4 +13,8 @@ let TO_UNWIND_SEGUE = "UnwindSegue"
 let LOGGED_IN_KEY = "loginstatus"
 let TOKEN_KEY = "authtoken"
 let USER_EMAIL = "useremail"
+typealias  completionHandler = ( _ Success: Bool)->()//closure
+//url
+let BASE_URL = "https://chattymac.herokuapp.com/v1"
+let REGISTER_URL = "\(BASE_URL)/account/register"
 
