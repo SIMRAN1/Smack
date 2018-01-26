@@ -15,6 +15,8 @@ class SignUpVC: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    var avatarName = "profileDefault"
+    var avatarColor = "[0.5, 0.5, 0.5, 1]"
     
     @IBOutlet weak var smackProfileIcon: UIImageView!
     override func viewDidLoad() {
@@ -46,14 +48,20 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var createaccountpressed: UIButton!
     
     @IBAction func crezteAccount(_ sender: UIButton) {
-        guard let emailid = email.text , email.text != "" else { return }
+        guard let name = username.text , username.text != "" else { return }
+        guard let email1 = email.text , email.text != "" else { return }
         guard let pass = password.text , password.text != "" else { return }
         
-        AuthService.instance.registerUser(email: emailid, password: pass) { (success) in
+        AuthService.instance.registerUser(email: email1, password: pass) { (success) in
             if success {
-                AuthService.instance.loginUser(email: emailid, password: pass, completion: { (success) in
+                AuthService.instance.loginUser(email: email1, password: pass, completion: { (success) in
                     if success {
-                        print("logged in user!", AuthService.instance.authToken)
+                        AuthService.instance.createUser(name: name, email: email1, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
+                            if success {
+                                print(UserDataService.instance.name, UserDataService.instance.avatarName)
+                                self.performSegue(withIdentifier: TO_UNWIND_SEGUE, sender: nil)
+                            }
+                        })
                     }
                 })
             }
