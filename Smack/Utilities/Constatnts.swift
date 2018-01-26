@@ -18,6 +18,7 @@ typealias  completionHandler = ( _ Success: Bool)->()//closure
 let BASE_URL = "https://chattymac.herokuapp.com/v1"
 let REGISTER_URL = "\(BASE_URL)/account/register"
 let LOGIN_URL = "\(BASE_URL)/account/login"
+let URL_USER_ADD = "\(BASE_URL)/user/add"
 let HEADER = [
     "Content-Type" : "application/json; charset=utf-8"
 ]
