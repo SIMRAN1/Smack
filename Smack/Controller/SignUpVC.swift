@@ -70,6 +70,7 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func chooseAvatar(_ sender: UIButton) {
+        performSegue(withIdentifier:"toCreateAvatar" , sender: nil)
     }
     
     @IBAction func GenerateBackgroundColor(_ sender: UIButton) {
