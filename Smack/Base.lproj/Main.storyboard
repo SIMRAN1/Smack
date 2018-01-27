@@ -433,6 +433,7 @@
                         <outlet property="email" destination="jdZ-W2-FdB" id="Tbu-oF-TeL"/>
                         <outlet property="password" destination="6a4-Bw-3tG" id="wuv-Jp-f4k"/>
                         <outlet property="smackProfileIcon" destination="PwX-mQ-WpJ" id="pP4-Cg-Aag"/>
+                        <outlet property="userImg" destination="PwX-mQ-WpJ" id="fED-oe-OLq"/>
                         <outlet property="username" destination="wLS-Ll-hBh" id="fbh-tE-S6m"/>
                         <segue destination="qiO-I3-Gvi" kind="unwind" identifier="UnwindSegue" unwindAction="prepareForUnwindWithSegue:" id="U1q-db-smF"/>
                         <segue destination="rRZ-e0-3Ze" kind="show" identifier="toCreateAvatar" id="jhY-HV-g8j"/>

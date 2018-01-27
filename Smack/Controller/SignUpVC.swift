@@ -18,11 +18,19 @@ class SignUpVC: UIViewController {
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
     
+    @IBOutlet weak var userImg: UIImageView!
     @IBOutlet weak var smackProfileIcon: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+       //     dismiss(animated: true, completion: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
