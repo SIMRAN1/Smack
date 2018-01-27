@@ -25,6 +25,14 @@ class AvatarViewController: UIViewController,UICollectionViewDelegate,UICollecti
     @IBAction func backPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    @IBAction func segmentControlChanged(_ sender: Any) {
+        if segmentControl.selectedSegmentIndex==0{
+            avatarType = .dark
+        }else {
+            avatarType = .light
+        }
+        collectionView.reloadData()
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarCell", for: indexPath) as? AvatarCell {
             cell.configureCell(index: indexPath.item, type: avatarType)
