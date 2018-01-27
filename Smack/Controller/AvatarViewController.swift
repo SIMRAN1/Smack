@@ -13,6 +13,7 @@ class AvatarViewController: UIViewController,UICollectionViewDelegate,UICollecti
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    var avatarType=AvatarType.dark
     override func viewDidLoad() {
         super.viewDidLoad()
      collectionView.delegate=self
@@ -26,6 +27,7 @@ class AvatarViewController: UIViewController,UICollectionViewDelegate,UICollecti
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "avatarCell", for: indexPath) as? AvatarCell {
+            cell.configureCell(index: indexPath.item, type: avatarType)
             return cell
         }
         return AvatarCell()
