@@ -408,12 +408,17 @@
                                     <action selector="SignUpBtnPressed:" destination="IDP-H2-3Hx" eventType="touchUpInside" id="MtW-VN-JHL"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="MDW-iz-cmM">
+                                <rect key="frame" x="169.5" y="240.5" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kqQ-3N-mvA" firstAttribute="centerX" secondItem="R7X-A6-Ywl" secondAttribute="centerX" id="FjP-sQ-GNq"/>
                             <constraint firstItem="kqQ-3N-mvA" firstAttribute="width" secondItem="PwX-mQ-WpJ" secondAttribute="width" id="Gx2-69-dZL"/>
                             <constraint firstItem="Yqx-pU-zP3" firstAttribute="centerX" secondItem="R7X-A6-Ywl" secondAttribute="centerX" id="MDy-ba-wWD"/>
+                            <constraint firstItem="MDW-iz-cmM" firstAttribute="centerX" secondItem="R7X-A6-Ywl" secondAttribute="centerX" id="MSF-Cn-4HO"/>
                             <constraint firstItem="PwX-mQ-WpJ" firstAttribute="centerX" secondItem="R7X-A6-Ywl" secondAttribute="centerX" id="Mza-dp-0oK"/>
                             <constraint firstItem="PwX-mQ-WpJ" firstAttribute="top" secondItem="d1E-16-xQq" secondAttribute="bottom" constant="60" id="RVP-Q0-u0h"/>
                             <constraint firstItem="Yqx-pU-zP3" firstAttribute="top" secondItem="PwX-mQ-WpJ" secondAttribute="bottom" constant="43" id="RgS-ka-d31"/>
@@ -424,6 +429,7 @@
                             <constraint firstItem="NWP-5z-ljm" firstAttribute="centerX" secondItem="R7X-A6-Ywl" secondAttribute="centerX" id="frS-ZP-m1q"/>
                             <constraint firstItem="DL8-hp-Pos" firstAttribute="top" secondItem="R7X-A6-Ywl" secondAttribute="top" constant="40" id="iLV-g1-2D8"/>
                             <constraint firstItem="d1E-16-xQq" firstAttribute="top" secondItem="NWP-5z-ljm" secondAttribute="bottom" constant="65" id="qtK-u5-hWQ"/>
+                            <constraint firstItem="MDW-iz-cmM" firstAttribute="centerY" secondItem="R7X-A6-Ywl" secondAttribute="centerY" constant="-75" id="r3v-N1-LDe"/>
                             <constraint firstItem="d1E-16-xQq" firstAttribute="centerX" secondItem="R7X-A6-Ywl" secondAttribute="centerX" id="sXR-fE-skJ"/>
                             <constraint firstItem="NWP-5z-ljm" firstAttribute="top" secondItem="cPp-SL-KER" secondAttribute="bottom" constant="50" id="yWu-Eq-jvj"/>
                         </constraints>
@@ -433,6 +439,7 @@
                         <outlet property="email" destination="jdZ-W2-FdB" id="Tbu-oF-TeL"/>
                         <outlet property="password" destination="6a4-Bw-3tG" id="wuv-Jp-f4k"/>
                         <outlet property="smackProfileIcon" destination="PwX-mQ-WpJ" id="pP4-Cg-Aag"/>
+                        <outlet property="spinner" destination="MDW-iz-cmM" id="ahP-8y-ILl"/>
                         <outlet property="userImg" destination="PwX-mQ-WpJ" id="fED-oe-OLq"/>
                         <outlet property="username" destination="wLS-Ll-hBh" id="fbh-tE-S6m"/>
                         <segue destination="qiO-I3-Gvi" kind="unwind" identifier="UnwindSegue" unwindAction="prepareForUnwindWithSegue:" id="U1q-db-smF"/>

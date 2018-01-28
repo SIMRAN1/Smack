@@ -15,6 +15,8 @@ class SignUpVC: UIViewController {
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
     var bgColor:UIColor?
@@ -59,6 +61,8 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var createaccountpressed: UIButton!
     
     @IBAction func crezteAccount(_ sender: UIButton) {
+        spinner.isHidden=false
+        spinner.startAnimating()
         guard let name = username.text , username.text != "" else { return }
         guard let email1 = email.text , email.text != "" else { return }
         guard let pass = password.text , password.text != "" else { return }
@@ -69,8 +73,11 @@ class SignUpVC: UIViewController {
                     if success {
                         AuthService.instance.createUser(name: name, email: email1, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if success {
-                                print(UserDataService.instance.name, UserDataService.instance.avatarName)
+                                self.spinner.isHidden=true
+                                self.spinner.stopAnimating()
+                                //print(UserDataService.instance.name, UserDataService.instance.avatarName)
                                 self.performSegue(withIdentifier: TO_UNWIND_SEGUE, sender: nil)
+                                  NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                             }
                         })
                     }
@@ -94,8 +101,14 @@ class SignUpVC: UIViewController {
         }
     }
     func setupView(){
+        spinner.isHidden=true
         username.attributedPlaceholder = NSAttributedString(string: "username",attributes: [NSAttributedStringKey.foregroundColor: smackPurpleColor])
         email.attributedPlaceholder = NSAttributedString(string: "email",attributes: [NSAttributedStringKey.foregroundColor: smackPurpleColor])
         password.attributedPlaceholder = NSAttributedString(string: "passsword",attributes: [NSAttributedStringKey.foregroundColor: smackPurpleColor])
+        let tap = UITapGestureRecognizer(target: self,action: #selector(SignUpVC.handleTap))
+        view.addGestureRecognizer(tap)
 }
+    @objc func handleTap(){
+        view.endEditing(true)
+    }
 }
