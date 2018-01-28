@@ -15,6 +15,8 @@
 		5B1D6390201C3ADF001A1D42 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1D638F201C3ADF001A1D42 /* AvatarCell.swift */; };
 		5B35ED1820077DEC008D689C /* Constatnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35ED1720077DEC008D689C /* Constatnts.swift */; };
 		5B9DA53720078F6700A54753 /* LoginVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9DA53620078F6700A54753 /* LoginVCViewController.swift */; };
+		5BA04F2B201E0496005DADE4 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA04F2A201E0496005DADE4 /* ProfileVC.swift */; };
+		5BA04F31201E052D005DADE4 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA04F30201E052D005DADE4 /* ProfileVC.xib */; };
 		5BF3A91C1FF8F5C90092FAF6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3A91B1FF8F5C90092FAF6 /* GradientView.swift */; };
 		5BF59CDE200A24300022E802 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF59CDD200A24300022E802 /* RoundedButton.swift */; };
 		5BF9D7C52008114B00C1862D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9D7C42008114B00C1862D /* SignUpVC.swift */; };
@@ -36,6 +38,8 @@
 		5B1D638F201C3ADF001A1D42 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		5B35ED1720077DEC008D689C /* Constatnts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constatnts.swift; sourceTree = "<group>"; };
 		5B9DA53620078F6700A54753 /* LoginVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCViewController.swift; sourceTree = "<group>"; };
+		5BA04F2A201E0496005DADE4 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		5BA04F30201E052D005DADE4 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileVC.xib; path = ../../../ProfileVC.xib; sourceTree = "<group>"; };
 		5BF3A91B1FF8F5C90092FAF6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		5BF59CDD200A24300022E802 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		5BF9D7C42008114B00C1862D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -81,6 +85,14 @@
 				5B35ED1720077DEC008D689C /* Constatnts.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5BA04F2F201E0516005DADE4 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				5BA04F30201E052D005DADE4 /* ProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		5BF3A91A1FF8F5B20092FAF6 /* View */ = {
@@ -132,6 +144,7 @@
 		F932BF2B1F19A88100EBDCFC /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				5BA04F2F201E0516005DADE4 /* XIBs */,
 				5B19A40E20093B0F00AD3E04 /* Services */,
 				5B35ED1620077DBF008D689C /* Utilities */,
 				5BF3A91A1FF8F5B20092FAF6 /* View */,
@@ -160,6 +173,7 @@
 		F932BF431F19AB2400EBDCFC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5BA04F2A201E0496005DADE4 /* ProfileVC.swift */,
 				F932BF461F19AB4200EBDCFC /* ChatVC.swift */,
 				F932BF481F19AB5200EBDCFC /* ChannelVC.swift */,
 				5B9DA53620078F6700A54753 /* LoginVCViewController.swift */,
@@ -239,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA04F31201E052D005DADE4 /* ProfileVC.xib in Resources */,
 				F932BF371F19A88100EBDCFC /* LaunchScreen.storyboard in Resources */,
 				F932BF341F19A88100EBDCFC /* Assets.xcassets in Resources */,
 				F932BF321F19A88100EBDCFC /* Main.storyboard in Resources */,
@@ -312,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA04F2B201E0496005DADE4 /* ProfileVC.swift in Sources */,
 				5BF9D7C52008114B00C1862D /* SignUpVC.swift in Sources */,
 				5BF59CDE200A24300022E802 /* RoundedButton.swift in Sources */,
 				F932BF491F19AB5200EBDCFC /* ChannelVC.swift in Sources */,
