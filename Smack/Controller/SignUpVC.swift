@@ -22,7 +22,7 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var smackProfileIcon: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       setupView()
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -93,4 +93,9 @@ class SignUpVC: UIViewController {
             self.userImg.backgroundColor=self.bgColor
         }
     }
+    func setupView(){
+        username.attributedPlaceholder = NSAttributedString(string: "username",attributes: [NSAttributedStringKey.foregroundColor: smackPurpleColor])
+        email.attributedPlaceholder = NSAttributedString(string: "email",attributes: [NSAttributedStringKey.foregroundColor: smackPurpleColor])
+        password.attributedPlaceholder = NSAttributedString(string: "passsword",attributes: [NSAttributedStringKey.foregroundColor: smackPurpleColor])
+}
 }
