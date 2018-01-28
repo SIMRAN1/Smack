@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F34E62708C8523E3B148AB2 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3533BA0C4C1F17B8A7E6890A /* Pods_Smack.framework */; };
+		5B05C25B201D967B00A89822 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B05C25A201D967B00A89822 /* CircleImage.swift */; };
 		5B19A41020093B4300AD3E04 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19A40F20093B4300AD3E04 /* AuthService.swift */; };
 		5B1D638A201BD8EC001A1D42 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1D6389201BD8EC001A1D42 /* UserDataService.swift */; };
 		5B1D638C201C2B5D001A1D42 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1D638B201C2B5D001A1D42 /* AvatarViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		3533BA0C4C1F17B8A7E6890A /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B05C25A201D967B00A89822 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		5B19A40F20093B4300AD3E04 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		5B1D6389201BD8EC001A1D42 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		5B1D638B201C2B5D001A1D42 /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				5BF3A91B1FF8F5C90092FAF6 /* GradientView.swift */,
 				5BF59CDD200A24300022E802 /* RoundedButton.swift */,
 				5B1D638F201C3ADF001A1D42 /* AvatarCell.swift */,
+				5B05C25A201D967B00A89822 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				5BF9D7C52008114B00C1862D /* SignUpVC.swift in Sources */,
 				5BF59CDE200A24300022E802 /* RoundedButton.swift in Sources */,
 				F932BF491F19AB5200EBDCFC /* ChannelVC.swift in Sources */,
+				5B05C25B201D967B00A89822 /* CircleImage.swift in Sources */,
 				5B1D638A201BD8EC001A1D42 /* UserDataService.swift in Sources */,
 				F932BF471F19AB4200EBDCFC /* ChatVC.swift in Sources */,
 				5B19A41020093B4300AD3E04 /* AuthService.swift in Sources */,
