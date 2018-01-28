@@ -29,6 +29,9 @@ class SignUpVC: UIViewController {
         if UserDataService.instance.avatarName != "" {
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             avatarName = UserDataService.instance.avatarName
+            if avatarName.contains("light") && bgColor == nil {
+                userImg.backgroundColor=UIColor.lightGray
+            }
        //     dismiss(animated: true, completion: nil)
         }
     }
