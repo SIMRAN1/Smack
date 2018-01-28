@@ -17,7 +17,7 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var password: UITextField!
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
-    
+    var bgColor:UIColor?
     @IBOutlet weak var userImg: UIImageView!
     @IBOutlet weak var smackProfileIcon: UIImageView!
     override func viewDidLoad() {
@@ -82,5 +82,10 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func GenerateBackgroundColor(_ sender: UIButton) {
+        let r = CGFloat(arc4random_uniform(255))/255
+         let g = CGFloat(arc4random_uniform(255))/255
+         let b = CGFloat(arc4random_uniform(255))/255
+        bgColor = UIColor(red: r,green: g,blue: b,alpha: 1)
+        self.userImg.backgroundColor=bgColor
     }
 }
