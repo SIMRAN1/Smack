@@ -132,6 +132,9 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="loginbtn" destination="FuK-Jm-06j" id="1Gc-7x-OKc"/>
+                        <outlet property="loginnext" destination="AZt-WQ-6BV" id="vLH-U5-M21"/>
+                        <outlet property="profimg" destination="NtP-I6-1pt" id="ZSg-Vc-cD0"/>
                         <segue destination="IDP-H2-3Hx" kind="show" identifier="tologin" id="dSH-xy-81L"/>
                     </connections>
                 </viewController>
