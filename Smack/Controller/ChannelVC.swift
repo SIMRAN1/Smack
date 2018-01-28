@@ -29,6 +29,7 @@ class ChannelVC: UIViewController {
     if AuthService.instance.isLoggedIn{
         loginnext.setTitle(UserDataService.instance.name, for: .normal)
         profimg.image=UIImage(named: UserDataService.instance.avatarName)
+        profimg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
     }else{
         loginnext.setTitle("Login", for: .normal)
         profimg.image=UIImage(named: "menuProfileIcon")
