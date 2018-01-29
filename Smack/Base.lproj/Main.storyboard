@@ -248,7 +248,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="IDP-H2-3Hx" eventType="touchUpInside" id="YKG-by-iTo"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="By9-gA-zjM">
+                                <rect key="frame" x="169" y="225" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -262,9 +269,14 @@
                             <constraint firstItem="JqP-WL-Ubd" firstAttribute="centerX" secondItem="Fbh-VH-NxS" secondAttribute="centerX" id="HmA-IX-psD"/>
                             <constraint firstItem="4rF-tk-1kQ" firstAttribute="trailing" secondItem="Fbh-VH-NxS" secondAttribute="trailingMargin" id="RAq-WZ-gUR"/>
                             <constraint firstItem="JqP-WL-Ubd" firstAttribute="top" secondItem="ZBl-4q-93h" secondAttribute="bottom" constant="40" id="bGc-eN-6eD"/>
+                            <constraint firstItem="By9-gA-zjM" firstAttribute="centerX" secondItem="Fbh-VH-NxS" secondAttribute="centerX" id="dGD-ph-81o"/>
+                            <constraint firstItem="By9-gA-zjM" firstAttribute="centerY" secondItem="Fbh-VH-NxS" secondAttribute="centerY" constant="-90" id="jaw-cO-BxX"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="6O1-Pl-8At" id="5DS-EK-nLk"/>
+                        <outlet property="spinner" destination="By9-gA-zjM" id="hUz-bw-2jA"/>
+                        <outlet property="usernameTxt" destination="Jbm-8a-1xt" id="NFb-MJ-qi7"/>
                         <segue destination="xM6-pm-q1x" kind="show" identifier="toCreateAccount" id="uyW-xa-axX"/>
                     </connections>
                 </viewController>
