@@ -17,6 +17,9 @@ typealias  completionHandler = ( _ Success: Bool)->()//closure
 //Colors
 let smackPurpleColor = #colorLiteral(red: 0.2901960784, green: 0.3019607843, blue: 0.8470588235, alpha: 0.5)
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
+
+let NOTIF_CHANNELS_LOADED = Notification.Name("channelsLoaded")
+let NOTIF_CHANNEL_SELECTED = Notification.Name("chanenlSelected")
 //url
 let BASE_URL = "https://chattymac.herokuapp.com/v1"
 let BASE_URLL = "https://chattymac.herokuapp.com/v1/"

@@ -12,6 +12,7 @@ import SwiftyJSON
 class MessageService{
     static let instance = MessageService()
     var channels = [Channel]()
+    var selectedChannel: Channel?
     func findAllChannel(completion: @escaping completionHandler){
         let header = [
             "Authorization":"Bearer \(AuthService.instance.authToken)",
@@ -31,7 +32,7 @@ class MessageService{
                         let channel = Channel(channelTitle: name, channelDescription: channelDescription, Id: id)
                         self.channels.append(channel)
                     }
-                    print(self.channels[0].Id)
+                    NotificationCenter.default.post(name:NOTIF_CHANNELS_LOADED,object: nil)
                     completion(true)
                 }
                 
@@ -46,5 +47,8 @@ class MessageService{
             }
         }
         
+    }
+    func clearChannels(){
+        channels.removeAll()
     }
 }
