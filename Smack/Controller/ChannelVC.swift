@@ -17,6 +17,11 @@ class ChannelVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var profimg: CircleImage!
     @IBOutlet weak var loginnext: UIButton!
+    @IBAction func addChannelPressed(_ sender: Any) {
+        let addChannel = AddChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
