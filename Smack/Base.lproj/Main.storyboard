@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="119" width="375" height="414"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mLr-K5-iR5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChannelCell" id="mLr-K5-iR5" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mLr-K5-iR5" id="ck9-A7-s7j">
@@ -92,6 +92,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="ChannelName" destination="CbG-wg-inx" id="aEq-cM-etw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -135,6 +138,7 @@
                         <outlet property="loginbtn" destination="FuK-Jm-06j" id="1Gc-7x-OKc"/>
                         <outlet property="loginnext" destination="AZt-WQ-6BV" id="vLH-U5-M21"/>
                         <outlet property="profimg" destination="NtP-I6-1pt" id="ZSg-Vc-cD0"/>
+                        <outlet property="tableView" destination="Qez-Yl-VE4" id="8oS-9f-JZi"/>
                         <segue destination="IDP-H2-3Hx" kind="show" identifier="tologin" id="dSH-xy-81L"/>
                     </connections>
                 </viewController>

@@ -42,7 +42,7 @@ class MessageService{
             } else {
                 completion(false)
                 print("abc")
-                debugPrint(response.result.error as Any)
+                print(response.result.error as Any)
             }
         }
         
