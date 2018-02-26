@@ -28,6 +28,14 @@ class ChannelVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         tableView.dataSource = self
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_notif:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        SocketService.instance.getChannel { (success) in
+            if success {
+                print("ssss")
+                self.tableView.reloadData()
+            }else{
+                print("nobita")
+            }
+        }
     }
     override func viewDidAppear(_ animated: Bool) {
         if AuthService.instance.isLoggedIn{

@@ -24,6 +24,7 @@
 		5BF6BB8A20442D4000968E2C /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6BB8920442D4000968E2C /* ChannelCell.swift */; };
 		5BF6BB8C20443F3900968E2C /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF6BB8B20443F3900968E2C /* AddChannelVC.xib */; };
 		5BF6BB8E20443F4A00968E2C /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6BB8D20443F4A00968E2C /* AddChannelVC.swift */; };
+		5BF6BB9220445E3200968E2C /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6BB9120445E3200968E2C /* SocketService.swift */; };
 		5BF9D7C52008114B00C1862D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF9D7C42008114B00C1862D /* SignUpVC.swift */; };
 		F932BF2D1F19A88100EBDCFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932BF2C1F19A88100EBDCFC /* AppDelegate.swift */; };
 		F932BF321F19A88100EBDCFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F932BF301F19A88100EBDCFC /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		5BF6BB8920442D4000968E2C /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		5BF6BB8B20443F3900968E2C /* AddChannelVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddChannelVC.xib; path = ../../../AddChannelVC.xib; sourceTree = "<group>"; };
 		5BF6BB8D20443F4A00968E2C /* AddChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddChannelVC.swift; path = ../../../AddChannelVC.swift; sourceTree = "<group>"; };
+		5BF6BB9120445E3200968E2C /* SocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketService.swift; path = ../../../SocketService.swift; sourceTree = "<group>"; };
 		5BF9D7C42008114B00C1862D /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		744F8A72AFC8AF2A24103AF0 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		BA85681A27A560F56CCC0CB4 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		5B19A40E20093B0F00AD3E04 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5BF6BB9120445E3200968E2C /* SocketService.swift */,
 				5B19A40F20093B4300AD3E04 /* AuthService.swift */,
 				5B1D6389201BD8EC001A1D42 /* UserDataService.swift */,
 				5BEAFCC2201F61DD00591CB2 /* MessageService.swift */,
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF6BB9220445E3200968E2C /* SocketService.swift in Sources */,
 				5BA04F2B201E0496005DADE4 /* ProfileVC.swift in Sources */,
 				5BF6BB8A20442D4000968E2C /* ChannelCell.swift in Sources */,
 				5BF9D7C52008114B00C1862D /* SignUpVC.swift in Sources */,

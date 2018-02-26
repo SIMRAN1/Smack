@@ -19,6 +19,7 @@ let smackPurpleColor = #colorLiteral(red: 0.2901960784, green: 0.3019607843, blu
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 //url
 let BASE_URL = "https://chattymac.herokuapp.com/v1"
+let BASE_URLL = "https://chattymac.herokuapp.com/v1/"
 let REGISTER_URL = "\(BASE_URL)/account/register"
 let LOGIN_URL = "\(BASE_URL)/account/login"
 let URL_USER_ADD = "\(BASE_URL)/user/add"
